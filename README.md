@@ -1,5 +1,7 @@
 = CALCULATOR =
 
+[![Build Status](https://travis-ci.org/zhenyatnk/calculator.svg?branch=master)](https://travis-ci.org/zhenyatnk/calculator)
+
 == Setting Up the Environment ==
 
 == Build and Run ==
