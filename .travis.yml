@@ -1,0 +1,24 @@
+language: cpp
+os: osx
+compiler: 
+  - gcc
+  - clang
+
+before_install:
+  #- brew install openssl@1.1
+  
+env:
+  #- OPENSSL_ROOT_DIR="/usr/local/opt/openssl"
+  
+script:
+    - mkdir .build
+    - cd .build
+    - cmake ..
+    - cmake --build .
+    - ctest --verbose
+
+after_success:
+  #- coveralls --root ../ --build-root ./ --gcov-options '\-lp' -E ".*gtest.*" -E ".*CMakeFiles.*" --exclude .build
+
+notifications:
+  email: false
