@@ -1,11 +1,11 @@
-#include <calculator/core/BaseExceptions.hpp>
+#include <calculator/core/ParseString.hpp>
 
 #include <gtest/gtest.h>
 
 //--------------------------------------------------
 using namespace calculator::core;
 
-class sample_test
+class ParseString_test
     :public ::testing::Test
 {
 public:
@@ -13,6 +13,6 @@ public:
     {}
 };
 
-TEST_F(sample_test, fake)
+TEST_F(ParseString_test, fake)
 {
 }
